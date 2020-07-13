@@ -1,0 +1,104 @@
+html {
+    box-sizing: border-box;
+}
+
+#hand {
+    border-radius: 5px;
+    border: 2px solid gray;
+
+}
+
+.uno-card {
+    color: white;
+    background-color: white;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: calc(25vh / 3);
+    height: 25vh;
+    width: 16vh;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1vh;
+    margin: 1vh;
+    float: left;
+}
+
+#hand .uno-card:hover {
+    transform: scale(1.25);
+    z-index: 2;
+}
+  
+.uno-card > div {
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+
+.uno-frame {
+    border: 5px solid white;
+    border-radius: 75% 25% 75% 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100% - 2vh);
+    margin-top: 1vh;
+}
+
+.uno-card span {
+    -webkit-text-stroke: 2px #222;
+    text-shadow: -2px 2px #222;
+    text-align: center;
+    line-height: inherit;
+}
+
+
+#deck > div {
+    background-color: black;
+    font-size: calc(25vh / 5);
+}
+
+#deck > div > div {
+    background-color: #c40c00;
+    border-color: #c40c00;
+    color: #f3e722;
+    font-weight: bold;
+}
+
+#deck > div > div > span {
+    transform: rotate(-30deg);      
+}
+
+.Blue > div {
+    background-color: #0849a3;
+}
+
+.Red > div {
+    background-color: #c40c00;
+}
+
+.Green > div {
+    background-color: #329a10;
+}
+
+.Yellow > div {
+    background-color: #e7d004;
+}
+
+.Wild .uno-frame{
+    background: linear-gradient(to bottom, #0849a3 0, #0849a3 25%, #c40c00 25%, #c40c00 50%, #329a10 50%, #329a10 75%, #e7d004 75%, #e7d004 100%);
+}
+
+.Wild > div {
+    background-color: black;
+}
+
+footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    font-size: 18pt;
+    font-weight: bold;
+}
